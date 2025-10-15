@@ -150,6 +150,9 @@
       .column-box {
         flex-direction: column;
       }
+      .mobile-hidden {
+        display: none;
+      }
     }
     </style>
 </head>
@@ -157,10 +160,9 @@
     <header>
         <div class="top-bar">
             <div>
-             <button onclick="open3()">음원재생</button>
-             <object type="text/html" width="560" height="315" data="https://www.youtube.com/watch?v=SSVZ0bR5JB4" allowFullScreen></object>
+                <button onclick="open3()">음원재생</button>
             </div>
-            <div>
+            <div class="mobile-hidden">
                 <button id="preViewPdf">미리보기</button>
                 <button id="savePdf">PDF 파일 저장</button>
             </div>
